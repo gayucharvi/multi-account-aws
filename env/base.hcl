@@ -1,7 +1,7 @@
 # Load env vars...
 locals {
   env_vars = yamldecode(join("\n", [file(find_in_parent_folders("env.yaml")) ? file("${get_terragrunt_dir()}/../region.yaml"): ""]))
-  aws_root_account_id = "889796695136"
+  aws_root_account_id = "xx"
 }
 
 # ...and make them available as inputs
