@@ -8,8 +8,8 @@ include "common" {
 }
 
 locals {
-  vpc_cidr = "12.0.0.0/16"
-  vpc_name = "startupcloud-stage"
+  vpc_cidr = var.vpc_cidr
+  vpc_name = "myvpc"
 }
 
 inputs = {
