@@ -29,7 +29,13 @@ variable "username" {
   default = "terraform-uat"
 }
 
+variable "account_name" {
+  default = "dev"
+}
 
+variable "email_address" {
+  default = "dev@example99999.com"
+}
 
 
 
