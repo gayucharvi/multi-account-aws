@@ -11,7 +11,6 @@ resource "aws_organizations_account" "dev" {
 
 output "aws_account_ids" {
   value = {
-    #prod = aws_organizations_account.prod.id
     dev = aws_organizations_account.dev.id
   }
 }
