@@ -3,11 +3,11 @@ include {
 }
 
 terraform {
-  source = "../../../modules//iam_roles"
+  source = "../../..//modules/iam/iam_roles"
 }
 
 dependency "iam_users" {
-  config_path = "../../root/iam_users"
+  config_path = "../..//modules/iam/iam_users"
 }
 
 inputs = {
